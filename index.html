@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laboratorio 2 - HTML: TecHackatón</title>
+    </head>
+    <body>
+        <header>
+            <h1>TecHackatón - Edición 2025</h1>
+            <nav>
+                <table border="0">
+                    <tr>
+                        <td><a href="#acerca" aria-label="Ir a la sección Acerca">Acerca</a></td>
+                        <td><a href="#detalles" aria-label="Ir a la sección Detalles">Detalles</a></td>
+                        <td><a href="#requisitos" aria-label="Ir a la sección Requisitos">Requisitos</a></td>
+                        <td><a href="#registro" aria-label="Ir a la sección Registro">Registro</a></td>
+                        <td><a href="#contacto" aria-label="Ir a la sección Contacto">Contacto</a></td>
+                    </tr>
+                </table>
+            </nav>
+        </header>
+
+        <main>
+            <article id="acerca" aria-label="Acerca del TecHackatón">
+                <h2>Acerca del TecHackatón</h2>
+                <p>El TecHackatón es la competencia anual de desarrollo
+                    tecnológico más grande de Costa Rica, organizada por el TEC
+                    desde 2018. En esta edición 2025, reuniremos a 100
+                    participantes para crear soluciones innovadoras bajo el tema
+                    <strong>Tecnología para el Desarrollo
+                        Sostenible</strong>.</p>
+                <p>Los equipos (de 4 personas cada uno) se formarán
+                    aleatoriamente durante el evento, fomentando la colaboración
+                    multidisciplinaria. Contaremos con:</p>
+                <ul>
+                    <li><strong>Mentores expertos</strong> en IA, desarrollo web
+                        y sostenibilidad.</li>
+                    <li><strong>Talleres técnicos</strong> sobre herramientas
+                        actuales (React, TensorFlow, etc.).</li>
+                    <li><strong>Premios</strong> en efectivo y becas para
+                        continuación de los proyectos.</li>
+                </ul>
+                <figure>
+                    <img src="imagen/trabajoeq.jpg"
+                        alt="Participantes trabajando en equipo durante un hackatón"
+                        tabindex="0"
+                        width="950" height="550">
+                    <figcaption>Equipos colaborando en proyectos</figcaption>
+                </figure>
+            </article>
+
+            <section id="detalles" aria-label="Detalles del Evento">
+                <h2>Detalles del Evento</h2>
+                <p>El evento se realizará en el <strong>Auditorio del Edificio
+                        de Computación del TEC</strong>, equipado con:</p>
+                <ul>
+
+                    <li><strong>Espacios de trabajo:</strong> Mesas equipadas
+                        con conexión eléctrica y WiFi de alta velocidad.</li>
+                    <li><strong>Alimentación:</strong> Desayunos, almuerzos y
+                        refrigerios incluidos para todos los participantes.</li>
+                    <li><strong>Premios:</strong> El equipo ganador recibirá
+                        $2000 en efectivo y mentoría para desarrollar su
+                        proyecto.</li>
+                </ul>
+                <h3>¿Cómo participar?</h3>
+                <ol>
+                    <li>Regístrate individualmente antes del 30 de agosto.</li>
+                    <li>Asiste a la ceremonia de apertura el 15 de
+                        septiembre.</li>
+                </ol>
+
+                <h3>Agenda Completa</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Actividad</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:00 AM</td>
+                            <td>Registro</td>
+                            <td>Acreditación de participantes y entrega de
+                                kits.</td>
+                        </tr>
+                        <tr>
+                            <td>9:00 AM</td>
+                            <td>Ceremonia de apertura</td>
+                            <td>Bienvenida por parte del equipo organizador y
+                                patrocinadores.</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 AM</td>
+                            <td>Formación de equipos</td>
+                            <td>Dinámica para asignar grupos de 4
+                                personas.</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 AM</td>
+                            <td>Inicio del hackatón</td>
+                            <td>Los equipos comienzan a desarrollar sus
+                                proyectos.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="requisitos" aria-label="Requisitos de Participación">
+                <h2>Requisitos de Participación</h2>
+                <ol>
+                    <li>Ser mayor de 18 años</li>
+                    <li>Tener conocimientos básicos de programación</li>
+                    <li>Ser estudiante del Tecnológico de Costa Rica</li>
+                </ol>
+                <blockquote>
+                    "El hackatón es una oportunidad para aprender, crear conexiones y desarrollar soluciones innovadoras."
+                    — Organizador del evento
+                </blockquote>
+            </section>
+
+            <section id="registro" aria-label="Registro de Participantes">
+                <h2>Formulario de Registro</h2>
+                <form>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required
+                        aria-labelledby="nombre-label">
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required
+                        aria-labelledby="correo-label">
+
+                    <fieldset>
+                        <legend>Tipo de participante:</legend>
+                        <input type="radio" id="estudiante" name="tipo"
+                            value="estudiante" checked
+                            aria-labelledby="estudiante-label">
+                        <label for="estudiante">Estudiante</label>
+
+                        <input type="radio" id="profesional" name="tipo"
+                            value="profesional"
+                            aria-labelledby="profesional-label">
+                        <label for="profesional">Profesional</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Áreas de interés (selecciona al menos
+                            una):</legend>
+
+                        <input type="checkbox" id="web" name="intereses"
+                            value="web" aria-labelledby="web-label">
+                        <label for="web">Desarrollo Web</label><br>
+
+                        <input type="checkbox" id="mobile" name="intereses"
+                            value="mobile" aria-labelledby="mobile-label">
+                        <label for="mobile">Desarrollo Móvil</label><br>
+
+                        <input type="checkbox" id="ai" name="intereses"
+                            value="ai" aria-labelledby="ai-label">
+                        <label for="ai">Inteligencia Artificial</label>
+                    </fieldset>
+
+                    <button type="submit"
+                        aria-label="Enviar formulario de registro">Registrarse</button>
+                </form>
+            </section>
+
+            <section id="contacto" aria-label="Contacto">
+                <h2>Contacto</h2>
+                <p>Para más información, contáctenos:</p>
+                <address>
+                    Correo: <a
+                        href="mailto:info@techackaton.cr">info@techackaton.cr</a><br>
+                    Teléfono: +506 2222-2222
+                </address>
+            </section>
+
+            <section id="ubicacion" aria-label="Ubicación del Evento">
+                <h2>Ubicación del Evento</h2>
+                <p>El TecHackatón 2025 se llevará a cabo en:</p>
+                <address>
+                    Learning Commons, Sistema de Bibliotecas del TEC<br>
+                    Tecnológico de Costa Rica<br>
+                    Cartago, Costa Rica
+                </address>
+                <figure>
+                    <img src="imagen/map.png" alt="Mapa de ubicación del TEC en Cartago" width="550" height="350">
+                    <figcaption>Ubicación del Campus Central del TEC en Cartago</figcaption>
+                </figure>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Patrocinadores</h3>
+            <p>Este evento no sería posible sin el apoyo de nuestras empresas
+                aliadas, comprometidas con el desarrollo tecnológico de Costa
+                Rica:</p>
+            <img src="imagen/Amd-logo.jpg" alt="Logo de AMD" width="220"
+                height="100" tabindex="-1">
+            <img src="imagen/logo_tec.jpg" alt="Logo del TEC" width="360"
+                height="100s">
+            <img src="imagen/CPIC.png" alt="Logo CPIC" width="300"
+                height="100" tabindex="-1">
+            <ul>
+                <li><strong>AMD:</strong> Proporcionará hardware de última
+                    generación para los equipos.</li>
+                <li><strong>TEC:</strong> Sede del evento y apoyo
+                    logístico.</li>
+                <li><strong>CPIC:</strong> Conectará a los ganadores con
+                    oportunidades de emprendimiento.</li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>© 2025 TecHackatón Costa Rica. Todos los derechos reservados.</p>
+            <p>Síguenos en redes sociales: <a
+                    href="https://facebook.com/techackatoncr" target="_blank"
+                    rel="noopener noreferrer">Facebook</a></p>
+            <a href="https://www.tec.ac.cr" target="_blank"
+                rel="noopener noreferrer">Visita el sitio del TEC</a>
+        </footer>
+    </body>
+</html>
